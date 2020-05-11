@@ -4,7 +4,7 @@ from other.my_secrets import REGRESSION_DEVEXT_DBQA_GIS
 
 def get_items_from_folder(
     gis_obj, folder, item_types=None
-) -> list:  # folder=None returns the root folder
+) -> list:  # folder=None returns the root folder in AGOL
     items = gis_obj.users.me.items(folder=folder)
 
     if item_types:
